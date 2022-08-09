@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Navbar, Row } from "react-bootstrap";
+import { Col, Navbar, Row, Container, Button } from "react-bootstrap";
 import videovg from "../grid/imagemgrid/fundo.mp4";
 import "./grid.css";
 import Carousel from "nuka-carousel";
@@ -71,70 +71,115 @@ function grid() {
 export function Grid2() {
   return (
     <>
-      <Row className="fundo2">
-        <Col lg={6}>
-          <div className="textformat">
-            {" "}
-            <h1 className="textformat1">
-              Select the best trip of<br></br> your life
-            </h1>
-            <h8>
-              Lorem Ipsum is simply dummy text of the printing and typesetting<br></br>
-              industry. Lorem Ipsum has been the industry's standard dummy text<br></br>
-              ever since the 1500$.
-            </h8>
-          </div>
-        </Col>
-
-        <Col lg={6}>
-          <div className="overlay">
-            <h1 className="textcarsousel">Travels</h1>
-            <Carousel
-              cellAlign="center"
-              slidesToShow={3}
-              autoplay={true}
-              autoplayInterval={4000}
-              wrapAround={true}
-              withoutControls={false}
-              transitionMode={"zoom"}
-              pauseOnHover={false}
-              swiping={false}
-              renderCenterLeftControls={({ previousSlide }) => (
-                <button onClick={previousSlide}>
-                  <i className="fa fa-arrow-left" />
-                  <img
-                    src={icone4}
-                    width="80"
-                    height="80"
-                    className=" positionlogo"
-                    alt="React Bootstrap logo"
-                  />
-                </button>
-              )}
-              renderCenterRightControls={({ nextSlide }) => (
-                <button onClick={nextSlide}>
-                  <i className="fa fa-arrow-right" />
-                  <img
-                    src={icone5}
-                    width="80"
-                    height="80"
-                    className=" positionlogo"
-                    alt="React Bootstrap logo"
-                  />
-                </button>
-              )}
-            >
-              <img src={Imagem1} height="380px" width="200px" alt="...." />
-              <img src={Imagem2} height="380px" width="200px" alt="...." />
-              <img src={Imagem3} height="380px" width="200px" alt="...." />
-              <img src={Imagem5} height="380px" width="200px" alt="...." />
-              <img src={Imagem6} height="380px" width="200px" alt="...." />
-              <img src={Imagem7} height="380px" width="200px" alt="...." />
-              <img src={Imagem8} height="380px" width="200px" alt="...." />
-            </Carousel>
-          </div>
-        </Col>
-      </Row>
+      <Container fluid>
+        <Row className="fundo2">
+          <Col lg={6}>
+            <div className="textformat">
+              {" "}
+              <h1 className="textformat1">
+                Select the best trip of<br></br> your life
+              </h1>
+              <h8>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                <br></br>
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text<br></br>
+                ever since the 1500$.
+              </h8>
+            </div>
+          </Col>
+          <Col lg={6}>
+            <div className="overlay">
+              <h1 className="textcarsousel">Travels</h1>
+              <Carousel
+                cellAlign="center"
+                slidesToShow={3}
+                autoplay={true}
+                autoplayInterval={4000}
+                wrapAround={true}
+                withoutControls={false}
+                transitionMode={"zoom"}
+                pauseOnHover={false}
+                swiping={false}
+                renderCenterLeftControls={({ previousSlide }) => (
+                  <button onClick={previousSlide}>
+                    <i className="fa fa-arrow-left" />
+                    <img
+                      src={icone4}
+                      width="80"
+                      height="80"
+                      className=" positionlogo"
+                      alt="React Bootstrap logo"
+                    />
+                  </button>
+                )}
+                renderCenterRightControls={({ nextSlide }) => (
+                  <button onClick={nextSlide}>
+                    <i className="fa fa-arrow-right" />
+                    <img
+                      src={icone5}
+                      width="80"
+                      height="80"
+                      className=" positionlogo"
+                      alt="React Bootstrap logo"
+                    />
+                  </button>
+                )}
+              >
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem1} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem2} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem3} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem5} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem6} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem7} height="380px" width="170px" alt="...." />
+                </Button>
+                <Button
+                  href="https://www.instagram.com/patrikybrito/"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  <img src={Imagem8} height="380px" width="170px" alt="...." />
+                </Button>
+              </Carousel>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

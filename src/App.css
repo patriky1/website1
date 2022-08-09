@@ -7,8 +7,9 @@
 	
 /* Firefox */
 * {
-  scrollbar-width: thick; /* none | auto  */
-  scrollbar-color: #5055df transparent;
+  scrollbar-width: auto ; /* none | auto  */
+  scrollbar-color: #537fd7 rgb(151, 161, 166);
+  
 }
 
 /* Firefox */
