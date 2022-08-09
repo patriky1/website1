@@ -1,0 +1,156 @@
+.grid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  margin-top: 4%;
+  width: 100%;
+  display:block;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  position: absolute;
+
+}
+
+.overlay {
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.fundo2{
+  background-image: url(../grid/imagemgrid/fundo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  background-size: cover;
+
+}
+
+.content1 {
+ 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  
+  
+}
+
+.content1:hover {
+  text-decoration: solid;
+  color: rgb(186, 199, 210);
+}
+
+.shadow {
+  border-width: 0px 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  filter: blur(5px);
+}
+
+.positionlogo{
+ margin-top: 200%;
+
+
+}
+
+.textoc{
+  position:absolute;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  text-align:left;
+  justify-content:center;
+  color: beige;
+  margin-top: 15%;
+  font-size: 80px;
+  left: 10%;
+  padding: 2%;
+
+
+}
+.textoc1{
+  position:absolute;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  text-align:left;
+   color: beige;
+  margin-top: 15%;
+  color: beige;
+  margin-top: 29%;
+  font-size: 12px;
+  left: 10%;
+  text-shadow: 2px 0px black;
+  padding: 2%;
+
+}
+.borderLeft {
+  
+  border-left: 8px solid hsl(0, 0%, 100%);
+}
+
+button{
+  background: transparent;
+  border: transparent;
+  opacity: 50%;
+  margin-top: 10%;
+}
+
+.slider-control-bottomcenter {
+  position: relative;
+  top: 70px; 
+  display: flex; 
+  margin: 0px;
+  padding: 0px; 
+  list-style-type: none;
+}
+
+.slider-list{
+  margin-top: 20%!important;
+  margin-left: 3%!important;
+}
+
+.textcarsousel{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  color: #ffffff;
+}
+.positionlogo1{
+  margin-left: 80%;
+}
+.textformat{
+  justify-content: center;
+  margin-top: 20%;
+  color: #ffffff;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  text-align:left;
+  margin-left: 15%;
+
+}
+.textformat1{
+  font-size: 80px!important;
+}

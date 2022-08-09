@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+*{
+   text-shadow: 1px 0px black;
+   font-family:uchen;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	
+/* Firefox */
+* {
+  scrollbar-width: thick; /* none | auto  */
+  scrollbar-color: #5055df transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 14px; /* vertical scrollbar */
+  height: 14px; /* horizontal scrollbar */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+*::-webkit-scrollbar-thumb {
+  background: #ffa07a;
+  border-radius: 14px;
+  border: calc(14px / 4) solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*::-webkit-scrollbar-thumb:hover {
+  background: #ff7f50;
 }
