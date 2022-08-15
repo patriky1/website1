@@ -4,6 +4,12 @@ import videovg from "../grid/imagemgrid/fundo.mp4";
 import "./grid.css";
 import Carousel from "nuka-carousel";
 
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+
+// import Alert from "react-bootstrap/Alert";
+
 import icone1 from "../grid/imagemgrid/search.png";
 import Imagem1 from "../grid/imagemgrid/imc1.png";
 import Imagem2 from "../grid/imagemgrid/imc2.png";
@@ -68,26 +74,452 @@ function grid() {
   );
 }
 
+export function Alertbutton1() {
+  const [show, setShow] = useState(false);
+
+  return (
+    <>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            <h2>LONDON</h2>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Name</Form.Label>
+              <Form.Control as="textarea" rows={1} />
+            </Form.Group>
+          </Form>
+
+          <p>
+            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+            ipsam atque a dolores quisquam quisquam adipisci possimus
+            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+            deleniti rem!<br></br>
+            <br></br>
+            <Button
+              href="mailto:patrikybrito@gmail.com"
+              variant="outline-secondary"
+              size="lg"
+            >
+              Reservar
+            </Button>
+          </p>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+}
+
 export function Grid2() {
+  const [show, setShow] = useState(false);
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
+  const [show6, setShow6] = useState(false);
+
   return (
     <>
       <Container fluid>
         <Row className="fundo2">
           <Col lg={6}>
-            <div className="textformat">
-              {" "}
-              <h1 className="textformat1">
-                Select the best trip of<br></br> your life
-              </h1>
-              <h8>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                <br></br>
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text<br></br>
-                ever since the 1500$.
-              </h8>
-            </div>
+            <h1 className="textformat"> Select the best trip you life </h1>
           </Col>
+
+          <Modal
+            show={show}
+            onHide={() => setShow(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>LONDON</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show1}
+            onHide={() => setShow1(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>NEW YORK</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show2}
+            onHide={() => setShow2(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>TAIWAN</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show3}
+            onHide={() => setShow3(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>JAPAN</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show4}
+            onHide={() => setShow4(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>MOSCOU</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show5}
+            onHide={() => setShow5(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>HAWAI</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
+          <Modal
+            show={show6}
+            onHide={() => setShow6(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                <h2>JAPAN</h2>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control as="textarea" rows={1} />
+                </Form.Group>
+              </Form>
+
+              <p>
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
+                quasi quod accusamus eos quod. Ab quos consequuntur eaque quo
+                rem! Mollitia reiciendis porro quo magni incidunt dolore amet
+                atque facilis ipsum deleniti rem!<br></br>
+                <br></br>
+                <Button
+                  href="mailto:patrikybrito@gmail.com"
+                  variant="outline-secondary"
+                  size="lg"
+                >
+                  Reservar
+                </Button>
+              </p>
+            </Modal.Body>
+          </Modal>
+
           <Col lg={6}>
             <div className="overlay">
               <h1 className="textcarsousel">Travels</h1>
@@ -127,51 +559,60 @@ export function Grid2() {
                 )}
               >
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow(true)}
                 >
                   <img src={Imagem1} height="380px" width="170px" alt="...." />
                 </Button>
+
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow1(true)}
                 >
                   <img src={Imagem2} height="380px" width="170px" alt="...." />
                 </Button>
+
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow2(true)}
                 >
                   <img src={Imagem3} height="380px" width="170px" alt="...." />
                 </Button>
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow3(true)}
                 >
                   <img src={Imagem5} height="380px" width="170px" alt="...." />
                 </Button>
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow4(true)}
                 >
                   <img src={Imagem6} height="380px" width="170px" alt="...." />
                 </Button>
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow5(true)}
                 >
                   <img src={Imagem7} height="380px" width="170px" alt="...." />
                 </Button>
                 <Button
-                  href="https://www.instagram.com/patrikybrito/"
+                  href="#ptb"
                   variant="outline-secondary"
                   size="lg"
+                  onClick={() => setShow6(true)}
                 >
                   <img src={Imagem8} height="380px" width="170px" alt="...." />
                 </Button>

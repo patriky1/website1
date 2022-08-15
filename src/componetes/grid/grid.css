@@ -25,7 +25,7 @@ video {
 }
 
 .overlay {  
-  align-items: center; 
+ 
   height: 100vh;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -158,6 +158,23 @@ button{
   margin-left: 15%;
 
 }
-.textformat1{
-  font-size: 80px!important;
+
+.bt1{
+margin-top: 20%;
+
+}
+.modal-90w{
+  justify-content: center;
+  margin-top: 15%;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  text-align:left;
+  margin-left: 8%;
+
+  backdrop-filter: blur(16px) saturate(180%)!important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%)!important;
+  background-color: rgba(17, 25, 40, 0.75)!important;
+
+  
 }

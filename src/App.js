@@ -5,6 +5,7 @@ import "./App.css";
 import Grid from "./componetes/grid/grid";
 
 import { Grid2 } from "./componetes/grid/grid";
+import { Alertbutton1 } from "./componetes/grid/grid";
 function App() {
   return (
     <>
@@ -12,8 +13,11 @@ function App() {
         <Grid />
       </section>
       <section>
+        <Alertbutton1/>
         <Grid2 />
+        
       </section>
+
     </>
   );
 }
