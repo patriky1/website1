@@ -158,6 +158,18 @@ button{
   margin-left: 15%;
 
 }
+.textformat1{
+  justify-content: center;
+  margin-top: 20%;
+  color: #ffffff;
+  text-shadow: 2px 1px #000000;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  text-align:justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 .bt1{
 margin-top: 20%;
@@ -165,16 +177,43 @@ margin-top: 20%;
 }
 .modal-90w{
   justify-content: center;
-  margin-top: 15%;
+  margin-top: 5%;
   flex-direction:row;
   justify-content: center;
   align-items:center;
   text-align:left;
   margin-left: 8%;
 
-  backdrop-filter: blur(16px) saturate(180%)!important;
-  -webkit-backdrop-filter: blur(16px) saturate(180%)!important;
-  background-color: rgba(17, 25, 40, 0.75)!important;
-
   
+}
+
+.arrow{
+  margin-left: 70%;
+}
+
+.icon.seta {
+    
+  text-align:center;
+  font-size:45px;
+  color:#f20000;
+  width:50px;
+  height:50px;
+  background:transparent;
+  margin:auto;
+  float:none;
+  display:block;
+  opacity:0;
+  animation:anima-seta 700ms ease infinite;
+}
+@keyframes anima-seta {
+  to {
+      opacity:1;
+      transform: translateY(18px);
+  }
+}
+
+.direct{
+  color: #ffffff;
+  margin-left: 5%;
+  margin-top:28%;
 }

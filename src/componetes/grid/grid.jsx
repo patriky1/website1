@@ -8,7 +8,6 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
-// import Alert from "react-bootstrap/Alert";
 
 import icone1 from "../grid/imagemgrid/search.png";
 import Imagem1 from "../grid/imagemgrid/imc1.png";
@@ -20,6 +19,7 @@ import Imagem7 from "../grid/imagemgrid/imc7.png";
 import Imagem8 from "../grid/imagemgrid/imc8.png";
 import icone4 from "../grid/imagemgrid/icone5.png";
 import icone5 from "../grid/imagemgrid/icone4.png";
+// import Arrow from "../grid/imagemgrid/arrow.png";
 export default grid;
 
 function grid() {
@@ -74,63 +74,7 @@ function grid() {
   );
 }
 
-export function Alertbutton1() {
-  const [show, setShow] = useState(false);
 
-  return (
-    <>
-      <Modal
-        show={show}
-        onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            <h2>LONDON</h2>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Name</Form.Label>
-              <Form.Control as="textarea" rows={1} />
-            </Form.Group>
-          </Form>
-
-          <p>
-            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-            ipsam atque a dolores quisquam quisquam adipisci possimus
-            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-            deleniti rem!<br></br>
-            <br></br>
-            <Button
-              href="mailto:patrikybrito@gmail.com"
-              variant="outline-secondary"
-              size="lg"
-            >
-              Reservar
-            </Button>
-          </p>
-        </Modal.Body>
-      </Modal>
-    </>
-  );
-}
 
 export function Grid2() {
   const [show, setShow] = useState(false);
@@ -146,7 +90,18 @@ export function Grid2() {
       <Container fluid>
         <Row className="fundo2">
           <Col lg={6}>
-            <h1 className="textformat"> Select the best trip you life </h1>
+            <div className="textformat1">
+           
+            <h1 > Select the best trip you life </h1>
+            <h6> Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+                unde commodi aspernatur enim, consectetur. Cumque deleniti
+                temporibus ipsam atque a dolores quisquam quisquam adipisci
+                possimus laboriosam. </h6>
+
+                <div className="icon icon-angle-down seta"></div>
+                
+                
+          </div>
           </Col>
 
           <Modal
@@ -615,8 +570,11 @@ export function Grid2() {
                   onClick={() => setShow6(true)}
                 >
                   <img src={Imagem8} height="380px" width="170px" alt="...." />
+
                 </Button>
+                
               </Carousel>
+              <p className="direct">© all rights reserved, 2022. </p>
             </div>
           </Col>
         </Row>
