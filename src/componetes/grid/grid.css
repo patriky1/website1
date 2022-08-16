@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
 }
-/* @media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .content{ 
     text-decoration: none;
     color: rgb(165, 58, 58);
@@ -13,7 +13,7 @@
     justify-content: center;
    
   }
-} */
+}
 
 
 
