@@ -14,18 +14,16 @@ video {
 .content {
   margin-top: 4%;
   width: 100%;
-  display:block;
+  display: block;
   flex-direction: row;
   align-items: center;
   text-align: center;
   color: rgb(0, 0, 0);
   justify-content: center;
   position: absolute;
-
 }
 
-.overlay {  
- 
+.overlay {
   height: 100vh;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -35,32 +33,29 @@ video {
   background-size: cover;
 }
 
-Button{
+button {
   background: transparent;
   border: transparent;
-  color:transparent;
+  color: transparent;
 }
 
-.fundo2{
+.fundo2 {
   background-image: url(../grid/imagemgrid/fundo2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
   background-size: cover;
-
+  border-top: 11px solid #ffffff;
 }
 
 .content1 {
- 
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-align: center;
   align-items: center;
   justify-content: center;
   position: absolute;
-  
-  
 }
 
 .content1:hover {
@@ -75,49 +70,43 @@ Button{
   filter: blur(5px);
 }
 
-.positionlogo{
- margin-top: 200%;
-
-
+.positionlogo {
+  margin-top: 200%;
 }
 
-.textoc{
-  position:absolute;
-  flex-direction:row;
+.textoc {
+  position: absolute;
+  flex-direction: row;
   justify-content: center;
-  align-items:center;
-  text-align:left;
-  justify-content:center;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
   color: beige;
-  margin-top: 15%;
+  margin-top: 18%;
   font-size: 80px;
   left: 10%;
   padding: 2%;
-
-
 }
-.textoc1{
-  position:absolute;
-  flex-direction:row;
+.textoc1 {
+  position: absolute;
+  flex-direction: row;
   justify-content: center;
-  align-items:center;
-  text-align:left;
-   color: beige;
+  align-items: center;
+  text-align: left;
+  color: beige;
   margin-top: 15%;
   color: beige;
-  margin-top: 29%;
+  margin-top: 30%;
   font-size: 12px;
   left: 10%;
   text-shadow: 2px 0px black;
   padding: 2%;
-
 }
 .borderLeft {
-  
   border-left: 8px solid hsl(0, 0%, 100%);
 }
 
-button{
+button {
   background: transparent;
   border: transparent;
   opacity: 50%;
@@ -126,94 +115,65 @@ button{
 
 .slider-control-bottomcenter {
   position: relative;
-  top: 70px; 
-  display: flex; 
+  top: 70px;
+  display: flex;
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
   list-style-type: none;
 }
 
-.slider-list{
-  margin-top: 20%!important;
-  margin-left: 1%!important;
+.slider-list {
+  margin-top: 20% !important;
+  margin-left: 1% !important;
 }
 
-.textcarsousel{
+.textcarsousel {
   position: absolute;
   left: 10%;
   top: 10%;
   color: #ffffff;
 }
-.positionlogo1{
+.positionlogo1 {
   margin-left: 80%;
 }
-.textformat{
+.textformat {
   justify-content: center;
   margin-top: 20%;
   color: #ffffff;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
-  align-items:center;
-  text-align:left;
+  align-items: center;
+  text-align: left;
   margin-left: 15%;
-
 }
-.textformat1{
+.textformat1 {
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 10%;
   color: #ffffff;
   text-shadow: 2px 1px #000000;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  text-align:justify;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.bt1{
-margin-top: 20%;
-
+.bt1 {
+  margin-top: 20%;
 }
-.modal-90w{
+.modal-90w {
   justify-content: center;
   margin-top: 5%;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
-  align-items:center;
-  text-align:left;
+  align-items: center;
+  text-align: left;
   margin-left: 8%;
-
-  
 }
 
-.arrow{
-  margin-left: 70%;
-}
-
-.icon.seta {
-    
-  text-align:center;
-  font-size:45px;
-  color:#f20000;
-  width:50px;
-  height:50px;
-  background:transparent;
-  margin:auto;
-  float:none;
-  display:block;
-  opacity:0;
-  animation:anima-seta 700ms ease infinite;
-}
-@keyframes anima-seta {
-  to {
-      opacity:1;
-      transform: translateY(18px);
-  }
-}
-
-.direct{
+.direct {
   color: #ffffff;
   margin-left: 5%;
-  margin-top:28%;
+  margin-top: 28%;
 }

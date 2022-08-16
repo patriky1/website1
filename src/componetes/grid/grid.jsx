@@ -8,7 +8,6 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
-
 import icone1 from "../grid/imagemgrid/search.png";
 import Imagem1 from "../grid/imagemgrid/imc1.png";
 import Imagem2 from "../grid/imagemgrid/imc2.png";
@@ -74,8 +73,6 @@ function grid() {
   );
 }
 
-
-
 export function Grid2() {
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
@@ -91,17 +88,15 @@ export function Grid2() {
         <Row className="fundo2">
           <Col lg={6}>
             <div className="textformat1">
-           
-            <h1 > Select the best trip you life </h1>
-            <h6> Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
+              <h1> Select the best trip you life </h1>
+              <h6>
+                {" "}
+                Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
                 unde commodi aspernatur enim, consectetur. Cumque deleniti
                 temporibus ipsam atque a dolores quisquam quisquam adipisci
-                possimus laboriosam. </h6>
-
-                <div className="icon icon-angle-down seta"></div>
-                
-                
-          </div>
+                possimus laboriosam.{" "}
+              </h6>
+            </div>
           </Col>
 
           <Modal
@@ -570,9 +565,7 @@ export function Grid2() {
                   onClick={() => setShow6(true)}
                 >
                   <img src={Imagem8} height="380px" width="170px" alt="...." />
-
                 </Button>
-                
               </Carousel>
               <p className="direct">© all rights reserved, 2022. </p>
             </div>
