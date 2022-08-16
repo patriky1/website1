@@ -4,6 +4,17 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 680px) {
+  .content{ 
+    text-decoration: none;
+    color: rgb(165, 58, 58);
+    text-align: center;
+    align-items:flex-start;
+    justify-content: center;
+    margin-top: 10%;
+   
+  }
+}
 
 video {
   width: 100%;
@@ -49,7 +60,6 @@ button {
 }
 
 .content1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -60,7 +70,7 @@ button {
 
 .content1:hover {
   text-decoration: solid;
-  color: rgb(186, 199, 210);
+  color: rgb(0, 0, 0);
 }
 
 .shadow {
@@ -164,7 +174,7 @@ button {
 }
 .modal-90w {
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 15%;
   flex-direction: row;
   justify-content: center;
   align-items: center;

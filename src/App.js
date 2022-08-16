@@ -16,6 +16,7 @@ function App() {
       
         <Grid2 />
         
+        
       </section>
 
     </>

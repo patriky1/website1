@@ -8,6 +8,9 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
+
+
+
 import icone1 from "../grid/imagemgrid/search.png";
 import Imagem1 from "../grid/imagemgrid/imc1.png";
 import Imagem2 from "../grid/imagemgrid/imc2.png";
@@ -575,3 +578,9 @@ export function Grid2() {
     </>
   );
 }
+
+
+
+
+
+
