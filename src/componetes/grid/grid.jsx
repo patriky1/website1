@@ -25,7 +25,7 @@ function grid() {
   return (
     <>
       <div className="grid">
-        <video src={videovg} autoPlay muted loop />
+        <video className="videobg" src={videovg} autoPlay muted loop />
         <div className="content">
           <Col lg="1">
             <a className=" content1" href="#education">
