@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Navbar, } from "react-bootstrap";
-import videovg from "../grid/imagemgrid/fundo.mp4";
+// import videovg from "../grid/imagemgrid/fundo.mp4";
 import "./grid.css";
 
 
