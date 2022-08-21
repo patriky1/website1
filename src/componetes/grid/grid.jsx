@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Navbar, Row, Container, Button } from "react-bootstrap";
-import videovg from "../grid/imagemgrid/fundo.mp4";
+// import videovg from "../grid/imagemgrid/fundo.mp4";
 import "./grid.css";
 import Carousel from "nuka-carousel";
 
@@ -25,7 +25,7 @@ function grid() {
   return (
     <>
       <div className="grid">
-        <video className="videobg" src={videovg} autoPlay muted loop />
+        {/* <video className="videobg" src={videovg} autoPlay muted loop /> */}
         <div className="content">
           <Col lg="1">
             <a className=" content1" href="#education">
